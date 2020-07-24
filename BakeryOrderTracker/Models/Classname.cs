@@ -1,4 +1,4 @@
-namespace ProjectName.Models
+namespace BakeryOrderTracker.Models
 {
   public class ClassName
   {

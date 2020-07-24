@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using BakeryOrderTracker.Models;
 
-namespace ProjectName.Tests
+namespace BakeryOrderTracker.Tests
 {
   [TestClass]
   public class ClassNameTests

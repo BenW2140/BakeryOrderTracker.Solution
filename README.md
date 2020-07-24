@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Order Tracking_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Tracks orders made with a vendor, July 24, 2020_
 
 #### By _**Ben White**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This website allows a user to track orders made with a vendor by letting them enter information about the order_
 
 ## Setup/Installation Requirements
 
@@ -18,13 +18,13 @@ Software Requirements:
 
 2. Clone this repository onto your computer: https://github.com/...
 
-3. In your preferred terminal window, navigate into PROJECTNAME.SOLUTIONS/PROJECTNAME using cd (i.e. cd
-   desktop/PROJECTNAME.SOLUTIONS/PROJECTNAME) and open the project with your preferred code editor.
+3. In your preferred terminal window, navigate into BakeryOrderTracker.Solution/BakeryOrderTracker using cd (i.e. cd
+   desktop/BakeryOrderTracker.Solution/BakeryOrderTracker) and open the project with your preferred code editor.
 4. Run the following terminal command: $ dotnet restore
 
 5. To initiate this terminal program, run the command: $ dotnet run
 
-6. To run the test suite included with this project, within the terminal navigate into PROJECTNAME.TESTS and run the following commands:
+6. To run the test suite included with this project, within the terminal navigate into BakeryOrderTracker.TESTS and run the following commands:
   * $ dotnet restore
   * $ dotnet test
 
@@ -32,7 +32,12 @@ Software Requirements:
 
 Behavior|Input|Output
 ------|------|------
-| |
+This program will allow the user to view all vendors|View Vendors|List of current Vendors: ...
+This program will allow the user to add a vendor|Suzie's Cafe|List of current Vendors: Suzie's Cafe
+This program will allow the user to view all orders from a vendor|Suzie's Cafe|Orders from Suzie's Cafe: ...
+This program will allow the user to add an order from a vendor|Order1|Orders from Suzie's Cafe: Order1
+This program will allow the user to remove all orders from a vendor|Remove orders from Suzie's Cafe| Orders from Suzie's Cafe: No orders
+
 
 ## Known Bugs
 
@@ -44,7 +49,7 @@ _{Let people know what to do if they run into any issues or have questions, idea
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_C#, .Net, MVC, ASP.NET_
 
 ### License
 
