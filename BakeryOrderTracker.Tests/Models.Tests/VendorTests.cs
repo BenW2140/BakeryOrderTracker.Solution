@@ -6,14 +6,33 @@ using System.Collections.Generic;
 namespace BakeryOrderTracker.Tests
 {
   [TestClass]
-  public class VendorTests
+  public class VendorTests : IDisposable
   {
+    public void Dispose()
+    {
+      Vendor.ClearAll();
+    }
     // Test methods go here
     [TestMethod]
     public void VendorConstructor_CreateInstanceOfVendor_Vendor()
     {
       Vendor newVendor = new Vendor("name");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+    }
+    [TestMethod]
+    public void GetName_ReturnsCorrectName_String()
+    {
+      string name = "name";
+      Vendor newVendor = new Vendor(name);
+      string result = newVendor.Name;
+      Assert.AreEqual(name, result);
+    }
+    [TestMethod]
+    public void GeiId_ReturnsCorrectId_Int()
+    {
+      Vendor newVendor = new Vendor("name");
+      int result = newVendor.Id;
+      Assert.AreEqual(1, result);
     }
   }
 }
