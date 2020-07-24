@@ -49,7 +49,7 @@ namespace BakeryOrderTracker.Tests
     {
       Vendor vendor1 = new Vendor("name", "very");
       Vendor vendor2 = new Vendor("please?", "descriptive");
-      Vendor result = new Vendor("empty", "gone");
+      Vendor result = Vendor.Find(1);
       Assert.AreEqual(vendor1, result);
     }
   }
