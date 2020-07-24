@@ -1,16 +1,19 @@
 @using BakeryOrderTracker.Models
 
-<h3>@Model.Name's Details:</h3>
+<h3>@Model["vendor"].Name's Details:</h3>
 
-<h5>@Model.Description</h5>
+<h5>@Model["vendor"].Description</h5>
 
-@* @if (Model.Orders.Count == 0)
+@if (Model["orders"].Count == 0)
 {
   <p>There are no orders for this Vendor.</p>
 }
 <ul>
-  @foreach (Order order in Model)
+  @foreach (Order order in Model["orders"])
   {
     <li><a href="/vendors/@Model.Id/orders/@order.Id">@order.Name</a></li>
   }
-</ul> *@
+</ul>
+<a href="/">Back Home</a>
+<a href="/vendors">Back to Vendors</a>
+<a href="/vendors/@Model["vendor"].Id/orders/new">Add an Order</a>

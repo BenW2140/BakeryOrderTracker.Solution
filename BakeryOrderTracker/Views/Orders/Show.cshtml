@@ -1,0 +1,10 @@
+@using BakeryOrderTracker.Models;
+
+<p> 
+  Name: @Model["order"].Name<br>
+  Description: @Model["order"].Descrption<br>
+  Price: $@Model["order"].Price<br>
+  Date: @Model["order"].Date
+</p>
+<a href="/vendors">Back to Vendors</a>
+<a href="/vendors/@Model["vendor"].Id/orders/new">Add another Order</a>
