@@ -24,7 +24,7 @@ Software Requirements:
 
 5. To initiate this terminal program, run the command: $ dotnet run
 
-6. To run the test suite included with this project, within the terminal navigate into BakeryOrderTracker.TESTS and run the following commands:
+6. To run the test suite included with this project, within the terminal navigate into BakeryOrderTracker.Tests and run the following commands:
   * $ dotnet restore
   * $ dotnet test
 
@@ -41,11 +41,11 @@ This program will allow the user to remove all orders from a vendor|Remove order
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_No known bugs at this time_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Ben White: bwhite2140@outlook.com_
 
 ## Technologies Used
 

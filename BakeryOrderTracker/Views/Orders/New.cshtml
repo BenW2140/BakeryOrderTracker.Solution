@@ -1,3 +1,6 @@
+@{
+  Layout = "_Layout";
+}
 <h2>Add new order for @Model.Name</h2>
 
 <form action="/vendors/@Model.Id/orders" method="post">
@@ -11,3 +14,6 @@
   <input id="date" name="date" type="text">
   <button type="submit">Add</button>
 </form>
+<a href="/">Back Home</a><br>
+<a href="/vendors">Back to Vendors</a><br>
+<a href="/vendors/@Model.Id">Back to Orders</a>
