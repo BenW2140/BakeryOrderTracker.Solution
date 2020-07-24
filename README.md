@@ -36,7 +36,7 @@ This program will allow the user to view all vendors|View Vendors|List of curren
 This program will allow the user to add a vendor|Suzie's Cafe|List of current Vendors: Suzie's Cafe
 This program will allow the user to view all orders from a vendor|Suzie's Cafe|Orders from Suzie's Cafe: ...
 This program will allow the user to add an order from a vendor|Order1|Orders from Suzie's Cafe: Order1
-This program will allow the user to remove all orders from a vendor|Remove orders from Suzie's Cafe| Orders from Suzie's Cafe: No orders
+This program will allow the user to remove all ~~orders~~ vendors ~~from a vendor~~|Remove orders from Suzie's Cafe| Orders from Suzie's Cafe: No orders
 
 
 ## Known Bugs
