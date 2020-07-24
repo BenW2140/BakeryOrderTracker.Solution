@@ -1,0 +1,16 @@
+@using BakeryOrderTracker.Models
+
+<h3>@Model.Name's Details:</h3>
+
+<h5>@Model.Description</h5>
+
+@* @if (Model.Orders.Count == 0)
+{
+  <p>There are no orders for this Vendor.</p>
+}
+<ul>
+  @foreach (Order order in Model)
+  {
+    <li><a href="/vendors/@Model.Id/orders/@order.Id">@order.Name</a></li>
+  }
+</ul> *@
