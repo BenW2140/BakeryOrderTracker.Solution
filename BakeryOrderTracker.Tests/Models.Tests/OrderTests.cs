@@ -28,5 +28,14 @@ namespace BakeryOrderTracker.Tests
       Assert.AreEqual(date, result.Date);
       Assert.AreEqual(1, result.Id);
     }
+    [TestMethod]
+    public void GetAll_ReturnAllOrders_List()
+    {
+      Order order1 = new Order("name", "descriptive", 50, "7/24/2020");
+      Order order2 = new Order("empty", "gone", 10, "1/1/2020");
+      List<Order> newList = new List<Order> {order1, order2};
+      List<Order> result = new List<Order> {};
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
