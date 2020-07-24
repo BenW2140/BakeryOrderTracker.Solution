@@ -6,11 +6,13 @@ namespace BakeryOrderTracker.Models
   {
     private static List<Vendor> _vendors = new List<Vendor> {};
     public string Name { get; set; }
+    public string Description { get; set; }
     public int Id { get; }
     // public List<Order> Orders { get; set }
-    public Vendor(string name)
+    public Vendor(string name, string description)
     {
       Name = name;
+      Description = description;
       _vendors.Add(this);
       Id = _vendors.Count;
       // Orders = new List<Order> {};
@@ -23,5 +25,6 @@ namespace BakeryOrderTracker.Models
     {
       return _vendors;
     }
+    
   }
 }
