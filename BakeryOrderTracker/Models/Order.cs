@@ -27,5 +27,9 @@ namespace BakeryOrderTracker.Models
     {
       return _orders;
     }
+    public static Order Find(int id)
+    {
+      return _orders[id - 1];
+    }
   }
 }

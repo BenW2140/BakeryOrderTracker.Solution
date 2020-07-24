@@ -46,7 +46,7 @@ namespace BakeryOrderTracker.Tests
     {
       Order order1 = new Order("name", "descriptive", 50, "7/24/2020");
       Order order2 = new Order("empty", "gone", 10, "1/1/2020");
-      Order result = new Order("", "", 0, "");
+      Order result = Order.Find(2);
       Assert.AreEqual(order2, result);
     }
   }
