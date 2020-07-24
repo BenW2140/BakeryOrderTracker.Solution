@@ -28,11 +28,20 @@ namespace BakeryOrderTracker.Tests
       Assert.AreEqual(name, result);
     }
     [TestMethod]
-    public void GeiId_ReturnsCorrectId_Int()
+    public void GetId_ReturnsCorrectId_Int()
     {
       Vendor newVendor = new Vendor("name");
       int result = newVendor.Id;
       Assert.AreEqual(1, result);
+    }
+    [TestMethod]
+    public void GetAll_ReturnsAllVendors_VendorList()
+    {
+      Vendor vendor1 = new Vendor("name");
+      Vendor vendor2 = new Vendor("please?");
+      List<Vendor> newList = new List<Vendor> {vendor1, vendor2};
+      List<Vendor> result = Vendor.GetAll();
+      CollectionAssert.AreEqual(newList, result);
     }
   }
 }
