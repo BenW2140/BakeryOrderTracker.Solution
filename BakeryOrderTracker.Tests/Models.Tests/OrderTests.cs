@@ -41,5 +41,13 @@ namespace BakeryOrderTracker.Tests
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void Find_ReturnSpecificOrder_Order()
+    {
+      Order order1 = new Order("name", "descriptive", 50, "7/24/2020");
+      Order order2 = new Order("empty", "gone", 10, "1/1/2020");
+      Order result = new Order("", "", 0, "");
+      Assert.AreEqual(order2, result);
+    }
   }
 }
