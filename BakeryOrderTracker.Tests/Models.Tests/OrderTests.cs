@@ -6,8 +6,12 @@ using System.Collections.Generic;
 namespace BakeryOrderTracker.Tests
 {
   [TestClass]
-  public class OrderTests
+  public class OrderTests : IDisposable
   {
+    public void Dispose()
+    {
+      Order.ClearAll();
+    }
     [TestMethod]
     public void TestOrder_CreateAnOrder_Order()
     {
@@ -34,7 +38,7 @@ namespace BakeryOrderTracker.Tests
       Order order1 = new Order("name", "descriptive", 50, "7/24/2020");
       Order order2 = new Order("empty", "gone", 10, "1/1/2020");
       List<Order> newList = new List<Order> {order1, order2};
-      List<Order> result = new List<Order> {};
+      List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
   }
