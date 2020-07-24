@@ -26,7 +26,7 @@ namespace BakeryOrderTracker.Controllers
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor specificVendor = Vendor.Find(vendorId);
       Order newOrder = new Order(name, description, price, date);
-      // specificVendor.AddOrder(newOrder);
+      specificVendor.AddOrder(newOrder);
       List<Order> vendorOrders = specificVendor.Orders;
       model.Add("orders", vendorOrders);
       model.Add("vendor", specificVendor);

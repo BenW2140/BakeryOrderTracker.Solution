@@ -29,5 +29,9 @@ namespace BakeryOrderTracker.Models
     {
       return _vendors[id - 1];
     }
+    public void AddOrder(Order order)
+    {
+      Orders.Add(order);
+    }
   }
 }

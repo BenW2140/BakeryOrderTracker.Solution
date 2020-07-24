@@ -58,8 +58,8 @@ namespace BakeryOrderTracker.Tests
       Vendor newVendor = new Vendor("name", "descriptive");
       Order newOrder = new Order("name", "descriptive", 10, "1/1/2020");
       List<Order> newList = new List<Order> {newOrder};
-      // newVendor.AddOrder(newOrder);
-      List<Order> result = new List<Order> {};
+      newVendor.AddOrder(newOrder);
+      List<Order> result = newVendor.Orders;
       CollectionAssert.AreEqual(newList, result);
     }
   }
